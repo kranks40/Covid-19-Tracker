@@ -13,11 +13,11 @@ function InfoBox({ title, cases, total }) {
 
                 {/*+120k number of cases*/}
                 <h2 className="infoBox_cases">{cases}</h2>
-                <Typography color="textSecondary">
-                    {total} Total
-                </Typography>
 
-                {/*1.2M Total*/}
+                    {/*1.2M Total*/}
+                <Typography className="infoBox_total" color="textSecondary">
+                    {total} Total
+                </Typography>               
 
             </CardContent>
             
