@@ -12,7 +12,6 @@
     "react": "^16.13.1",
     "react-chartjs-2": "^2.10.0",
     "react-dom": "^16.13.1",
-    "react-leaflet": "^2.7.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -35,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "leaflet": "^1.6.0",
+    "react-leaflet": "^2.7.0"
   }
 }
