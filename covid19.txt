@@ -1,0 +1,16 @@
+* Material UI install = npm install @material-ui/core
+https://disease.sh/v3/covid-19/countries
+https://disease.sh/v3/covid-19/countries/Country_Code
+//https://disease.sh/v3/covid-19/all
+
+export const sortData = (data) => {
+    const sorteData = [...data];
+
+    sorteData.sort((a,b) => {
+        if (a.cases > b.cases) {
+            return -1;
+        } else {
+            return 1;
+        }
+    })
+    return sorteData;
