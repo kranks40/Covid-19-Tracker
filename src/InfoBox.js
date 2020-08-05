@@ -1,20 +1,15 @@
 import React from 'react'
 import { Card, CardContent, Typography} from '@material-ui/core'
+//import '/InfoBox.css';
 
 function InfoBox({ title, cases, total }) {
     return (
         <Card>
             <CardContent>
-                {/*Title i.e Caronavirus cases*/}
-                <Typography classNamne="infoBox_title" color="textSecondary">
+                <Typography color="textSecondary" gutterBottom>
                     {title}
                 </Typography>
-                
-
-                {/*+120k number of cases*/}
                 <h2 className="infoBox_cases">{cases}</h2>
-
-                    {/*1.2M Total*/}
                 <Typography className="infoBox_total" color="textSecondary">
                     {total} Total
                 </Typography>               
@@ -22,7 +17,7 @@ function InfoBox({ title, cases, total }) {
             </CardContent>
             
         </Card>
-    )
+    );
 }
 
 export default InfoBox

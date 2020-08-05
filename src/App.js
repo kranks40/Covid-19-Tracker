@@ -4,7 +4,7 @@ import './App.css';
 import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
-import {sortData} from "./util";
+import {sortData } from "./util";
 import LineGraph from './LineGraph'
 import numeral from "numeral"
 
@@ -32,7 +32,7 @@ useEffect(() => {
   // async = send a request, wait fir it then do something with it
 
   const getCountriesData = async () => {
-    await fetch('https://disease.sh/v3/covid-19/countries')
+   fetch('https://disease.sh/v3/covid-19/countries')
     .then((response) => response.json())
     .then((data) => {
       const countries = data.map((country) => ({      
